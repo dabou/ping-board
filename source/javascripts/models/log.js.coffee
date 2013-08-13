@@ -1,0 +1,1 @@
+PingBoard.Log = Ember.Object.extend({})

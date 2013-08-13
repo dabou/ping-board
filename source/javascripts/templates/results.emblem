@@ -1,0 +1,3 @@
+ul
+  each
+    li {{player1.name}} VS {{player2.name}} {{player1Score}} - {{player2Score}}

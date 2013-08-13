@@ -1,0 +1,19 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container-fluid
+      .a.brand PingBoard
+
+.container-fluid
+  .row-fluid
+    .span3
+      = outlet players
+
+    .span9
+      = outlet receiverForfeits
+      = outlet logs
+
+  .row-fluid
+    = outlet results
+
+/ Modal for new players
+= outlet playersForm

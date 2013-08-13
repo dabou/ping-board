@@ -1,0 +1,1 @@
+PingBoard.Forfeit = Ember.Object.extend({})

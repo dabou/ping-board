@@ -1,0 +1,1 @@
+PingBoard.LogsController = Ember.ArrayController.extend({})

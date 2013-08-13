@@ -1,0 +1,18 @@
+#players-form.modal.hide.fade
+  .modal-header
+    button.close type="button" data-dismiss="modal" aria-hidden="true" &times;
+    h3 Joueurs
+
+  .modal-body
+    .container-fluid
+      ul
+        each controllers.players
+          li= name
+      form.row-fluid submit="add"
+        .span9
+          Ember.TextField class="span12" valueBinding="name"
+        .offset1.span2
+          input.btn type="submit" value="Ajouter"
+
+  .modal-footer
+    a.btn.btn-primary data-dismiss="modal" aria-hidden="true" click="randomizeOrder" Valider
