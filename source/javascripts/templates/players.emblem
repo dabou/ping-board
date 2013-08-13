@@ -12,7 +12,7 @@ ul
       li.nav-header Joueurs
       each
         li class=isSelected:active:
-          a href="#" click="selectPlayer this" {{name}} - {{victories.length}}
+          a href="#" click="selectPlayer this" {{name}} - {{victories}}
 
 .row-fluid
   button.btn.btn-primary.span6 click="playerWin" Gagné

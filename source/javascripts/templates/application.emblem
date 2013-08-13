@@ -13,7 +13,7 @@
       = outlet logs
 
   .row-fluid
-    = outlet results
+    = outlet scores
 
 / Modal for new players
 = outlet playersForm

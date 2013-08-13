@@ -1,1 +1,0 @@
-PingBoard.Victory = Ember.Object.extend({})

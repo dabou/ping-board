@@ -1,5 +1,5 @@
 PingBoard.PlayersController = Ember.ArrayController.extend
-  needs: ["forfeits", "logs", "victories"]
+  needs: ["forfeits", "logs", "matches"]
   itemController: "player"
   sortProperties: "order"
 
@@ -31,7 +31,7 @@ PingBoard.PlayersController = Ember.ArrayController.extend
       else
         @get("server")
 
-      @addPlayerVictory(winner, looser)
+      @addMatch(winner, looser)
       @addPlayerForfeit(winner, @get("controllers.forfeits").randomForfeit())
       @emptyPlayerForfeits(looser)
 
@@ -59,7 +59,6 @@ PingBoard.PlayersController = Ember.ArrayController.extend
     player.set("forfeits", forfeits)
     logsController.addObject(PingBoard.Log.create(player: player, forfeit: forfeit))
 
-  addPlayerVictory: (player, looser) ->
-    victory = PingBoard.Victory.create(looser: looser)
-    player.get("victories").pushObject(victory)
-    @get("controllers.victories").addObject(victory)
+  addMatch: (winner, looser) ->
+    match = PingBoard.Match.create(winner: winner, looser: looser)
+    @get("controllers.matches").addObject(match)

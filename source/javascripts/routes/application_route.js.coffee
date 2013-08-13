@@ -6,9 +6,9 @@ PingBoard.ApplicationRoute = Ember.Route.extend
       into: "application"
       outlet: "players"
 
-    @render "results",
+    @render "scores",
       into: "application"
-      outlet: "results"
+      outlet: "scores"
 
     @render "receiver_forfeits",
       into: "application"

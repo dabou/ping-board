@@ -1,0 +1,1 @@
+PingBoard.MatchesController = Ember.ArrayController.extend({})
