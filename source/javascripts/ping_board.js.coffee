@@ -5,5 +5,9 @@
 #= require_self
 
 $(->
-  $("#players-form").modal("show")
+  modal = $("#players-form").modal()
+  modal.on "shown", ->
+    $(@).find("input[type=text]").focus()
+
+  modal.modal("show")
 )

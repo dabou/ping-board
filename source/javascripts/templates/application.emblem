@@ -9,6 +9,7 @@
       = outlet scores
 
   #center.container-fluid
+    | Gages du receveur
     = outlet receiverForfeits
     = outlet logs
 

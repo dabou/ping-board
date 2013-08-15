@@ -1,12 +1,8 @@
 PingBoard.ScoreController = Ember.ObjectController.extend
 
   ratio: ->
-    ###ratio = 1 / (1 + @get("player1Victories") - @get("player2Victories"))
-    if @get("player1Victories") > @get("player2Victories")
-      ratio = 1 - ratio
-    ratio * 100###
     parties = @get("player1Victories") + @get("player2Victories")
-    @get("player1Victories") / parties * 100
+    @get("player1Victories") / parties * 100 if parties > 0
 
 
   barStyle: (->

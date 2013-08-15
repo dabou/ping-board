@@ -15,4 +15,4 @@
           input.btn type="submit" value="Ajouter"
 
   .modal-footer
-    a.btn.btn-primary data-dismiss="modal" aria-hidden="true" click="randomizeOrder" Valider
+    a.btn.btn-primary data-dismiss="modal" click="randomizeOrder" Valider

@@ -2,6 +2,7 @@ PingBoard.PlayersFormController = Ember.ArrayController.extend
   needs: "players"
 
   name: ""
+  autofocus: "autofocus"
 
   add: ->
     @get("controllers.players").addObject(PingBoard.Player.create(name: @get("name")))
