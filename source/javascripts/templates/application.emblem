@@ -3,17 +3,14 @@
     .container-fluid
       .a.brand PingBoard
 
-.container-fluid
-  .row-fluid
-    .span3
+#main
+  #menu.container-fluid
       = outlet players
+      = outlet scores
 
-    .span9
-      = outlet receiverForfeits
-      = outlet logs
-
-  .row-fluid
-    = outlet scores
+  #center.container-fluid
+    = outlet receiverForfeits
+    = outlet logs
 
 / Modal for new players
 = outlet playersForm

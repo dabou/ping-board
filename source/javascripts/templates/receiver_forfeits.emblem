@@ -1,3 +1,5 @@
-ul
-  each
-    li= description
+#receiver-forfeits
+  | Gages du receveur
+  ul
+    each
+      li= description

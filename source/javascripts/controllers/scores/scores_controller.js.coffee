@@ -1,6 +1,8 @@
 PingBoard.ScoresController = Ember.ArrayController.extend
   needs: ["players", "matches"]
 
+  itemController: "score"
+
   playersBinding: "controllers.players.model"
   matchesBinding: "controllers.matches.model"
 

@@ -1,3 +1,13 @@
-ul
-  each
-    li {{player1.name}} VS {{player2.name}} {{player1Victories}} - {{player2Victories}}
+#scores
+  table.table
+    tr
+      th Joueurs
+      th
+      th Score
+    each
+      tr
+        td {{player1.name}} - {{player2.name}}
+        td
+          .progress
+            div class={:bar barClass} style=barStyle
+        td {{player1Victories}} - {{player2Victories}}

@@ -1,19 +1,20 @@
-.row-fluid
-p A la table
-ul
-  li
-    span Service : {{ server.name }}
-  li
-    span Reception : {{ receiver.name }}
+#players
+  .row-fluid
+  p A la table
+  ul
+    li
+      span Service : {{ server.name }}
+    li
+      span Reception : {{ receiver.name }}
 
-.row-fluid
-  .well.sidebar-nav
-    ul.nav.nav-list
-      li.nav-header Joueurs
-      each
-        li class=isSelected:active:
-          a href="#" click="selectPlayer this" {{name}} - {{victories}}
+  .row-fluid
+    .well.sidebar-nav
+      ul.nav.nav-list
+        li.nav-header Joueurs
+        each
+          li class=isSelected:active:
+            a href="#" click="selectPlayer this" {{name}} - {{victories}}
 
-.row-fluid
-  button.btn.btn-primary.span6 click="playerWin" Gagné
-  button.btn.btn-primary.span6 click="playerWin30" 3 - 0
+  .row-fluid
+    button.btn.btn-primary.span6 click="playerWin" Gagné
+    button.btn.btn-primary.span6 click="playerWin30" 3 - 0
