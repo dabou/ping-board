@@ -9,8 +9,9 @@
       = outlet scores
 
   #center.container-fluid
-    | Gages du receveur
+    h3 Gages du receveur
     = outlet receiverForfeits
+    h3 Historique
     = outlet logs
 
 / Modal for new players

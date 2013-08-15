@@ -1,4 +1,5 @@
 #logs.well
-  ul
+  p
     each
-      li {{player.name}} : {{forfeit.description}}
+      | {{player.name}} : {{forfeit.description}}
+      br

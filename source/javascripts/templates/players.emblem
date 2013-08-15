@@ -1,6 +1,6 @@
 #players
   .row-fluid
-  p A la table
+  h3 A la table
   ul
     li
       span Service : {{ server.name }}

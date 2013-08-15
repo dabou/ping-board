@@ -1,7 +1,6 @@
 PingBoard.PlayersController = Ember.ArrayController.extend
   needs: ["forfeits", "logs", "matches"]
   itemController: "player"
-  sortProperties: "order"
 
   selectedPlayer: null
   server: null

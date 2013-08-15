@@ -1,4 +1,5 @@
 #receiver-forfeits
-  ul
+  p
     each
-      li= description
+      = description
+      br
