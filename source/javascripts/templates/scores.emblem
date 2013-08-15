@@ -1,5 +1,5 @@
 #scores
-  table.table
+  table.table.table-condensed
     tr
       th Joueurs
       th
