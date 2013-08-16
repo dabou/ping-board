@@ -10,3 +10,9 @@ PingBoard.PlayerController = Ember.ObjectController.extend
       match.get("winner") is @get("model")
     victoriousMatches.get("length")
   ).property("controllers.matches.@each")
+
+  defeats: (->
+    defeatedMatches = @get("controllers.matches.model").filter (match) =>
+      match.get("looser") is @get("model")
+    defeatedMatches.get("length")
+  ).property("controllers.matches.@each")
